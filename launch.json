@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "LLDB: Debug main.cpp",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}\\out\\main.exe",
+            "args": [],
+            "preRunCommands": [
+                "breakpoint set --name main"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "preLaunchTask": "C/C++: clang++.exe build active file"
+        }
+    ]
+}
